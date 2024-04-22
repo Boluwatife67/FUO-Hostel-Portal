@@ -76,12 +76,10 @@ function greetMe() {
   }
 }
 setInterval(greetMe, 1000);
-// nav
-// const navLink = document.querySelectorAll('.navi')
 
-// function linkAction(){
-//     navLink.forEach(n => n.classList.remove('active'))
-//     this.classList.add('active')
-// }
+let logclose = document.getElementById("logclose");
 
-// navLink.forEach(n => n.addEventListener('click', linkAction));
+setTimeout(function(){
+  logclose.style.display='none';
+}, 5000);
+

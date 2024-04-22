@@ -56,3 +56,28 @@ function pause(){
 };
 
 containerr.addEventListener('mouseout', autoSliding);
+
+ // Get all div elements with id starting with "status"
+ let divElements = document.querySelectorAll('[id ="statuss"]');
+
+ // Loop through all div elements
+ for (let i = 0; i < divElements.length; i++) {
+     let divElement = divElements[i];
+
+     // Check the text inside the div
+     if (divElement.innerText == "Pending") {
+       
+         divElement.style.backgroundColor = "Orange";
+     } else if (divElement.innerText == "Completed") {
+         // If the text is "completed", set the background color to green
+         divElement.style.backgroundColor = "green";
+     }
+     else if (divElement.innerText == "Rejected") {
+        // If the text is "completed", set the background color to green
+        divElement.style.backgroundColor = "red";
+    }
+    else if (divElement.innerText == "Approved") {
+        // If the text is "completed", set the background color to green
+        divElement.style.backgroundColor = "#6AAF07";
+    }
+ }

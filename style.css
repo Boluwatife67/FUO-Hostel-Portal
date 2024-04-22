@@ -66,13 +66,19 @@ body::-webkit-scrollbar {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: 3s ease-in-out;
-  animation: bchange 10s ease-in infinite;
+  /* background: linear-gradient(rgba(0, 61, 33, 0.8), rgb(0, 61, 33)), url(/img/Hostel.jpg); */
+  /* transition: 3s ease-in-out; */
+  /* animation: bchange 10s ease-in infinite; */
 }
 @keyframes bchange {
-  0%, 100% {background-image: linear-gradient(rgba(0, 61, 33, 0.8), rgb(0, 61, 33)), url(/img/DSC_2355.jpg);
+  0% {
+    background-image: url(/img/Hostel.jpg);
   }
-  50% {background-image: linear-gradient(rgba(0, 61, 33, 0.8), rgb(0, 61, 33)), url(/img/FOUNTAIN\ UNIVERSITY\ GRADUATES.jpg);
+  50% {
+    background-image: url(/img/hostel4.jpg);
+  }
+  100% {
+    background-image: url(/img/Hostel.jpg);
   }
 }
 .first-div-sub{
@@ -159,6 +165,7 @@ body::-webkit-scrollbar {
   display: block;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .login-type{
   width: 100%;

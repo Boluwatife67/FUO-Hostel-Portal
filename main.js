@@ -45,3 +45,10 @@ worksBut.addEventListener('click', function(){
     secondfill.style.color = '#6AAF07';
     thirdfill.style.color = 'white';
 });
+// Define an array of image URLs
+
+let logclose = document.getElementById("logclose");
+
+setTimeout(function(){
+  logclose.style.display='none';
+}, 5000);
